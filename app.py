@@ -8,7 +8,7 @@ from utils import split_data
 df = pd.read_csv("./data/Iris.csv")
 X_train, X_test, y_train, y_test = split_data(df)
 #step-1: initialise the model class
-clf = DecisionTreeClassifier(criterion="entropy") #Information gain as criteria
+clf = DecisionTreeClassifier(criterion="gini") #gini as criterion
 #step-2: train the model on training set
 clf.fit(X_train,y_train)
 #step-3 evaluate the data on testing set
