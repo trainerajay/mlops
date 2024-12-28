@@ -7,6 +7,6 @@ def split_data(df,test_size=0.2):
     '''
     features = ['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']
     taget = 'Species'
-    X_train, X_test, y_train, y_test = train_test_split(df[features],df[taget] , test_size=0.3, shuffle=True)
+    X_train, X_test, y_train, y_test = train_test_split(df[features],df[taget] , test_size=0.4, shuffle=True)
     return X_train, X_test, y_train, y_test
 
